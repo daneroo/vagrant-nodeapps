@@ -2,17 +2,14 @@ Vagrant::Config.run do |config|
   config.vm.box = "lucid32"
   config.vm.box_url = "http://files.vagrantup.com/lucid32.box"
 
-  # config.vm.network "33.33.33.10"
   config.vm.customize do |vm|
     #vm.memory_size = 1024
   end  
+  # config.vm.network "33.33.33.10"
 	#config.vm.network "192.168.11.12"
   
-  config.vm.forward_port "ekoforms", 84, 8084
-  config.vm.forward_port "ekoforms-ssl", 443, 8443
-  config.vm.forward_port "docserver", 81, 8081
-  config.vm.forward_port "ekomobi-web", 82, 8082
-  config.vm.forward_port "dashboard", 83, 8083
+  config.vm.forward_port "web", 80, 8080
+  config.vm.forward_port "ssl", 443, 8443
     
   # if this directory (or link) this it will cache all update packages.
   ## note: moved the link mount point from /var/cache/apt to /var/cache/apt/archives
