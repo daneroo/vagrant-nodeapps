@@ -19,7 +19,7 @@ end
 ## node.js section - 
 # add-apt-repository ppa:chris-lea/node.js
 # deb http://ppa.launchpad.net/chris-lea/node.js/ubuntu lucid main
-if (true)
+if (false)
     apt_repository "chris-lea-node" do
       uri "http://ppa.launchpad.net/chris-lea/node.js/ubuntu"
       distribution "lucid"
