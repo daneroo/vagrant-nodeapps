@@ -1,7 +1,7 @@
 #require_recipe "resolver"
 #node[:resolver][:nameservers] = ["8.8.8.8","8.8.4.4"]
 
-require_recipe "apt"
+include_recipe "apt"
 
 execute "set-timezone-montreal" do
   command "ZZ='America/Montreal'; [ $ZZ = `cat /etc/timezone` ] || (echo $ZZ > /etc/timezone; sudo dpkg-reconfigure --frontend noninteractive tzdata)"
@@ -15,7 +15,7 @@ end
 
 # ?? %w{ openssl build-essential libssl-dev }
 
-
+include_recipe "node"
 ## node.js section - 
 # add-apt-repository ppa:chris-lea/node.js
 # deb http://ppa.launchpad.net/chris-lea/node.js/ubuntu lucid main
