@@ -4,6 +4,7 @@ TODO:
 
 *   add haibu
 *   convert tu upstart from runit
+*   varcacheapt & .gitignore
 
 ## References
 *   [haibu](https://github.com/)
