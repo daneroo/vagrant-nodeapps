@@ -14,7 +14,7 @@ end
 end
 
 # ?? %w{ openssl build-essential libssl-dev }
-
+# apt-get install git-core curl build-essential openssl libssl-dev
 include_recipe "node"
 ## node.js section - 
 # add-apt-repository ppa:chris-lea/node.js
