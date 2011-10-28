@@ -5,6 +5,7 @@ TODO:
 *   add haibu
 *   convert tu upstart from runit
 *   varcacheapt & .gitignore
+*   check chef.recipe_url
 
 ## References
 *   [haibu](https://github.com/)
