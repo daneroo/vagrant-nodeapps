@@ -4,6 +4,7 @@ TODO:
 
 *   varcacheapt & .gitignore
 *   check chef.recipe_url
+*   install couchdb (cloudant (bigcouch),rpm from couchone (geo),or from source)
 
 ## References
 *   [haibu](https://github.com/)
