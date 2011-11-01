@@ -1,9 +1,7 @@
-# Vagrant installation of a haibu server
+# Vagrant installation of a node app server
 
 TODO:
 
-*   add haibu
-*   convert tu upstart from runit
 *   varcacheapt & .gitignore
 *   check chef.recipe_url
 
